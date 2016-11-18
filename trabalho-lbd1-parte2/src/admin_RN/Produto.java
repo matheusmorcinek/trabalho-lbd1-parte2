@@ -6,9 +6,9 @@ public class Produto {
 	private double preco;
 	private String nome;
 	private int codCategoria;
-	private Categoria categoria;
+	//private Categoria categoria;
 	
-	public Produto(double preco, String nome, Categoria categoria){
+	public Produto(double preco, String nome, int codCategoria){
 		this.preco = preco;
 		this.nome = nome;
 		this.categoria = categoria;

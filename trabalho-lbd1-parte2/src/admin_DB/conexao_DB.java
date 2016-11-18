@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 
 public class conexao_DB {
     
-    private Connection conexao;
+    public static Connection conexao;
 
 	public void conectarBanco() {
 				
@@ -27,8 +27,8 @@ public class conexao_DB {
                 }
 	}
         
-        public Connection getConexao(){
-            return this.conexao;
+        public static Connection getConexao(){
+            return conexao;
         }
         
         public void fechaConexao(){
