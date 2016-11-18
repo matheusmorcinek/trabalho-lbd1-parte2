@@ -1,16 +1,20 @@
 package admin_RN;
 
-import admin_App.ClienteController;
-
 public class Cliente {
 
+	private int codCliente;
 	private String nome;
 	private int telefone;
 	private String endereco;
 	private double limiteConta;
-	private int codCliente;
-	//falta status char
+	private String status;
 	
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
 	public int getCodCliente() {
 		return codCliente;
 	}
